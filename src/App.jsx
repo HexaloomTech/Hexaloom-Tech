@@ -1,11 +1,11 @@
 import React from "react";
 import Navbar from "./components/Navbar";
-import Hero from "./pages/Hero"
-import About from "./pages/About";
-import Team from "./pages/Team";
-import Projects from "./pages/Projects";
-import Blog from "./pages/Blog";
-import Contact from "./pages/Contact";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Team from "./components/Team";
+import Services from "./components/Services";
+import Blog from "./components/Blog";
+import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
       <Navbar />
       <Hero />
       <About />
-      <Projects />
+      <Services />
       <Blog />
       <Team />
       <Contact />

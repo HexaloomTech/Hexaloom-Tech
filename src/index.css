@@ -1,10 +1,15 @@
 @import "tailwindcss";
 
-*{
- background-image: url(/public/spx.jpg); 
-  /*
-  background: #333;*/
+@font-face {
+  font-family: "Poppins";
+  src: url(./assets/fonts/Poppins-Regular.woff2);
 }
+body{
+  font-family: "Poppins";
+  background-image: url(/public/background-i.svg); 
+  background-color: #151515;
+}
+
 #learn{
   background: #8B5CF6;
 }
