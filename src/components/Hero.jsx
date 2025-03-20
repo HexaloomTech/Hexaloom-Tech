@@ -5,7 +5,7 @@ import AnimatedBeams from "./AnimatedBeems";
 const Hero = () => {
   return (
     <section id="home" className="h-screen text-white text-center py-24 px-6">
-      <div className="flex flex-column justify-between m-20">
+      <div className="flex flex-col gap-20  justify-center  m-20">
       <div className="text-center">
         <h1 className="text-4xl md:text-5xl font-bold leading-tight">
           Welcome to Hexaloom
@@ -17,7 +17,7 @@ const Hero = () => {
           Learn More
         </a>
       </div>
-      <div className="text-center flex items-center justify-center md:mr-20 md:mt-0 mt-30">
+      <div className="text-center flex items-center justify-center">
         
         <img src={logo} alt="" />
       </div>

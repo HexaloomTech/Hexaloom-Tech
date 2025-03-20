@@ -1,85 +1,3 @@
-/*import React, { useState } from "react";
-import logo from "/Hexa-logo.png"
-import { CiMenuFries } from "react-icons/ci";
-import { LiaTimesSolid } from "react-icons/lia";
-import { IoSunnyOutline } from "react-icons/io5";
-import { Link } from "react-scroll";
-
-const Navbar = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
-
-  return (
-   
-      <nav className="text-white p-4 w-full top-0 z-10 bg-[#15151573] bg-clip-padding sticky  backdrop-filter backdrop-blur-sm bg-opacity-10">
-
-      <div className="container mx-auto flex justify-between items-center">
-        <div className="text-center">
-      <img src={logo} alt="logo" className="w-54"/>
-      </div>
-        <button
-          onClick={() => setMenuOpen(!menuOpen)}
-          className="md:hidden text-2xl focus:outline-none cursor-pointer"
-        >
-          {menuOpen ? <LiaTimesSolid />
- : <CiMenuFries />
-          }
-        </button>
-
-        
-        <div className="nav">
-        <ul className="hidden md:flex space-x-6 cursor-pointer bg-[#61616161] p-2 px-6  rounded-full bg-opacity-40 z-10">
-          {["Home", "About", "Services", "Blog", "Team",].map((item) => (
-            <li key={item}>
-              <a href={`#${item.toLowerCase()}`} className="hover:text-violet-400">
-                {item}
-              </a>
-            </li>
-          ))}
-        </ul>
-        </div>
-        <div className=" flex gap-3 items-center">
-          <Link
-           to="contact"
-          >
-          <button className="bg-[#61616161] p-2 px-4 hidden md:flex rounded-full">
-         
-          Contact Us
-          </button>
-          </Link>
-          
-        <div className="bg-[#61616161] p-2 rounded-full">
-        <IoSunnyOutline className="text-2xl " />
-        </div>
-      </div>
-      </div>
-
-     
-      {menuOpen && (
-        <ul className="md:hidden text-center  py-4 space-y-4">
-          {["Home", "About", "Services", "Blog", "Team"].map((item) => (
-            <li key={item}>
-              <a
-                href={`#${item.toLowerCase()}`}
-                className="block hover:text-violet-400"
-                onClick={() => setMenuOpen(false)}
-              >
-                {item}
-              </a>
-            </li>
-          ))}
-        </ul>
-        
-      )}
-      
-    </nav>
-  );
-};
-
-export default Navbar;
-*/
-
-
-
 import React, { useState, useEffect } from "react";
 import logo from "/Hexa-logo.png";
 import { CiMenuFries } from "react-icons/ci";
@@ -134,7 +52,7 @@ const Navbar = () => {
         {/* Contact & Theme Toggle (Desktop) */}
         <div className="hidden md:flex items-center space-x-4">
           <Link to="contact" smooth={true} duration={500}>
-            <button className="bg-[#61616161] px-5 py-2 rounded-full hover:bg-opacity-70 transition">
+            <button className="bg-[#61616161] px-5 py-2 rounded-full whitespace-nowrap cursor-pointer hover:text-violet-400 hover:bg-opacity-70 transition">
               Contact Us
             </button>
           </Link>
@@ -175,7 +93,7 @@ const Navbar = () => {
               to="contact"
               smooth={true}
               duration={500}
-              className="bg-violet-500 px-6 py-3 rounded-full text-white hover:bg-violet-600 transition"
+              className="bg-violet-500 px-6 py-3 rounded-full cursor-pointer text-white hover:bg-violet-600 transition"
               onClick={() => setMenuOpen(false)}
             >
               Contact Us
